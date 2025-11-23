@@ -4,7 +4,7 @@ public class SettingFaculty {
 
     boolean valid = false;
     String faculty;
-    void setFaculty() {
+    void switchFaculty() {
 
         try (Scanner obScanner = new Scanner(System.in)) {
 
