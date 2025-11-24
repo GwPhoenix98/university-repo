@@ -6,40 +6,37 @@ public class SettingFaculty {
     String faculty;
 
     void switchFaculty() {
+        Scanner obScanner = new Scanner(System.in);
+        System.out.print("Enter the faculty (Mathematics / Computer Science): ");
+        faculty = obScanner.nextLine()
+                .toLowerCase()
+                .trim()
+                .replace(" ", "");
 
-        try (Scanner obScanner = new Scanner(System.in)) {
+        do {
+            switch (faculty) {
 
-            System.out.print("Enter the faculty (Mathematics / Computer Science): ");
-            faculty = obScanner.nextLine()
-                    .toLowerCase()
-                    .trim()
-                    .replace(" ", "");
+                case "mathematics":
+                    faculty = "Mathematics";
+                    System.out.println("Your faculty is " + faculty + ".");
+                    valid = true;
+                break;
 
-            do {
-                switch (faculty) {
+                case "computerscience":
+                    faculty = "Computer Science";
+                    System.out.println("Your faculty is " + faculty + ".");
+                    valid = true;
+                break;
 
-                    case "mathematics":
-                        faculty = "Mathematics";
-                        System.out.println("Your faculty is " + faculty + ".");
-                        valid = true;
-                        break;
+                default: System.out.println("Unknow Faculty!");
+                System.out.print("Please enter Mathematics or Computer Science: ");
+                faculty = obScanner.nextLine()
+                        .toLowerCase()
+                        .trim()
+                        .replace(" ", "");
+            }
 
-                    case "computerscience":
-                        faculty = "Computer Science";
-                        System.out.println("Your faculty is " + faculty + ".");
-                        valid = true;
-                        break;
-
-                    default:
-                        System.out.println("Unknow Faculty!");
-                        System.out.print("Please enter Mathematics or Computer Science: ");
-                        faculty = obScanner.nextLine()
-                                .toLowerCase()
-                                .trim()
-                                .replace(" ", "");
-                }
-
-            } while (!valid);
-        }
+        } while (!valid);
     }
 }
+
