@@ -5,7 +5,7 @@ public class SettingSpecialty {
     boolean valid = false;
     String specialty;
 
-    void switchFaculty() {
+    void switchSpecialty() {
 
         Scanner obScanner = new Scanner(System.in);
 

@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class NameOfStudent {
         String name;
 
-        void nameofStudent1() {
+        void nameofStudent() {
 
             Scanner sc = new Scanner(System.in);
             System.out.print("Enter the name of Student: ");

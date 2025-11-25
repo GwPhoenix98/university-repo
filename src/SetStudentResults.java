@@ -2,16 +2,16 @@ import java.util.Scanner;
 
 public class SetStudentResults {
 
-    private int test1Note,
-                test2Note,
-                examNote;
+    int     test1Note,
+            test2Note,
+            examNote;
     Scanner obScanner = new Scanner(System.in);
 
     void addNota() {
 
-        this.test1Note = getValidNote("Enter the grade from the first test: ");
-        this.test2Note = getValidNote("Enter the grade from the second test: ");
-        this.examNote  = getValidNote("Enter the grade from the exam: ");
+        test1Note = getValidNote("Enter the grade from the first test: ");
+        test2Note = getValidNote("Enter the grade from the second test: ");
+        examNote  = getValidNote("Enter the grade from the exam: ");
     }
 
     int getValidNote(String message) {
