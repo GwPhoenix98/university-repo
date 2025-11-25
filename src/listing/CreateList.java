@@ -64,6 +64,9 @@ public class CreateList {
                 run = false;
             }
         }
+
+        displayAllCards();
+
     }
 
     public void addCard(String name,

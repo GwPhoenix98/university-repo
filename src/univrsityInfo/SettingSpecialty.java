@@ -27,7 +27,7 @@ public class SettingSpecialty {
                     break;
 
                 case "geometry":
-                    specialty = "geometry";
+                    specialty = "Geometry";
                     System.out.println("Your specialty is " + specialty + ".");
                     valid = true;
                     break;

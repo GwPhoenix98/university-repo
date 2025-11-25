@@ -6,7 +6,7 @@ public class Student {
         System.out.println("Entering the program...");
         CreateList list = new CreateList();
         list.menageList();
-        list.displayAllCards();
+
 
     }
 }

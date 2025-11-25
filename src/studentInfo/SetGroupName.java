@@ -9,7 +9,7 @@ public class SetGroupName {
     Scanner obScanner = new Scanner(System.in);
 
     public void setGroup() {
-        System.out.println("do you want to add new students? (Yes/No):");
+        System.out.println("Do you want to add new students? (Yes/No):");
         String answer = obScanner.nextLine();
 
         if (answer.equalsIgnoreCase("No")) {

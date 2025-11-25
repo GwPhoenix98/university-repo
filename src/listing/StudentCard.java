@@ -24,12 +24,12 @@ public class StudentCard {
 
     }
 
-    public String displayCard() {
+    public String toString() {
         return  "Name: " + name + "\n" +
                 "Year: " + year + "\n" +
                 "Faculty: " + faculty + "\n" +
                 "Specialty: " + specialty + "\n" +
                 "Group: " + groupName + "\n" +
-                "Notes: " + studentNote;
+                "Notes: " + studentNote + "\n";
     }
 }
