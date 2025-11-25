@@ -50,6 +50,8 @@ public class SettingFaculty {
 
         System.out.println("Group created successufully: " + groupName);
         System.out.println("Continuing program...");
+
+
     }
 }
 
