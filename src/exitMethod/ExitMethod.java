@@ -1,8 +1,10 @@
+package exitMethod;
+
 import java.util.Scanner;
 
 public class ExitMethod {
 
-    void exit() {
+    public void exit() {
 
         Scanner obScanner = new Scanner(System.in);
 

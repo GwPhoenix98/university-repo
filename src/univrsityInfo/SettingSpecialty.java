@@ -1,11 +1,13 @@
+package univrsityInfo;
+
 import java.util.Scanner;
 
 public class SettingSpecialty {
 
     boolean valid = false;
-    String specialty;
+    public String specialty;
 
-    void switchSpecialty() {
+    public void switchSpecialty() {
 
         Scanner obScanner = new Scanner(System.in);
 
@@ -31,7 +33,7 @@ public class SettingSpecialty {
                     break;
 
                 case "integralcalculus":
-                    specialty = "integralcalculus";
+                    specialty = "Integral Calculus";
                     System.out.println("Your specialty is " + specialty + ".");
                     valid = true;
                     break;

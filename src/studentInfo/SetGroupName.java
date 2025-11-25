@@ -1,12 +1,14 @@
+package studentInfo;
+
 import java.util.Scanner;
 
-public class setGroupName {
+public class SetGroupName {
 
-    String groupName;
+    public String groupName;
 
     Scanner obScanner = new Scanner(System.in);
 
-    void setGroup() {
+    public void setGroup() {
         System.out.println("do you want to add new students? (Yes/No):");
         String answer = obScanner.nextLine();
 

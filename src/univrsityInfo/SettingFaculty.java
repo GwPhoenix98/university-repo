@@ -1,11 +1,13 @@
+package univrsityInfo;
+
 import java.util.Scanner;
 
 public class SettingFaculty {
 
     boolean valid = false;
-    String faculty;
+    public String faculty;
 
-    void switchFaculty() {
+    public void switchFaculty() {
         Scanner obScanner = new Scanner(System.in);
         System.out.print("Enter the faculty (Mathematics / Computer Science): ");
         faculty = obScanner.nextLine()

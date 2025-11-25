@@ -1,3 +1,13 @@
+package listing;
+
+import exitMethod.ExitMethod;
+import studentInfo.NameOfStudent;
+import studentInfo.SetStudentResults;
+import studentInfo.YearOfStudent;
+import studentInfo.SetGroupName;
+import univrsityInfo.SettingFaculty;
+import univrsityInfo.SettingSpecialty;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -10,11 +20,11 @@ public class CreateList {
     SetStudentResults studentResults  = new SetStudentResults();
     NameOfStudent nameOfStudent       = new NameOfStudent();
     YearOfStudent yearOfStudent       = new YearOfStudent();
-    setGroupName settingGroup         = new setGroupName();
+    SetGroupName settingGroup         = new SetGroupName();
     List<StudentCard> cards           = new ArrayList<>();
     Scanner obScanner                 = new Scanner(System.in);
 
-    void menageList() {
+    public void menageList() {
 
         boolean run = true;
 
@@ -39,7 +49,7 @@ public class CreateList {
 
             nameOfStudent.displayStudentInfo(yearOfStudent);
 
-            studentResults.addNota();
+            studentResults.addNote();
             int note = studentResults.examNote;
 
             studentResults.displayResults();
@@ -56,7 +66,7 @@ public class CreateList {
         }
     }
 
-    void addCard(String name,
+    public void addCard(String name,
                  int year,
                  String faculty,
                  String specialty,
@@ -66,7 +76,7 @@ public class CreateList {
         cards.add(new StudentCard(name, year, faculty, specialty, groupName, note));
     }
 
-    void displayAllCards() {
+    public void displayAllCards() {
         System.out.println("\n--- All Student Cards ---");
         for (StudentCard card : cards) {
             System.out.println(card);

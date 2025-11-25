@@ -1,13 +1,15 @@
+package studentInfo;
+
 import java.util.Scanner;
 
 public class SetStudentResults {
 
-    int     test1Note,
-            test2Note,
-            examNote;
+    int         test1Note,
+                test2Note;
+    public int  examNote;
     Scanner obScanner = new Scanner(System.in);
 
-    void addNota() {
+    public void addNote() {
 
         test1Note = getValidNote("Enter the grade from the first test: ");
         test2Note = getValidNote("Enter the grade from the second test: ");
@@ -27,7 +29,7 @@ public class SetStudentResults {
         return note;
     }
 
-    void displayResults() {
+    public void displayResults() {
 
         System.out.println("\n--- Student Results ---");
         System.out.println("Test 1: " + test1Note);
