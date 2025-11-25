@@ -22,7 +22,6 @@ public class StudentCard {
 
     }
 
-    @Override
     public String displayCard() {
         return  "Name: " + name + "\n" +
                 "Year: " + year + "\n" +
